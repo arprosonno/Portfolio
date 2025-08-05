@@ -1,0 +1,139 @@
+ body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e6f7ff; /* Lighter sky blue */
+  color: black;
+}
+
+header {
+  background-color: #a8e4ff;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #bbb;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background-color: #b3eaff;
+}
+
+.container {
+  padding: 30px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-img {
+  width: 250px;
+  height: auto;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.bio h2 {
+  font-size: 2.2rem; /* Increased font size */
+  margin-bottom: 12px;
+}
+
+.bio p {
+  font-size: 1.25rem; /* Increased font size */
+  line-height: 1.8;
+  max-width: 700px;
+  margin: auto;
+}
+
+.cv-btn {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #00aaff;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.cv-btn:hover {
+  background-color: #0077aa;
+}
+
+/* Responsive for mobile */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px 6px;
+    font-size: 0.9rem;
+  }
+
+  .bio h2 {
+    font-size: 1.6rem;
+  }
+
+  .bio p {
+    font-size: 1.05rem;
+  }
+
+  .profile-img {
+    width: 180px;
+  }
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: vertical;
+}
+
+.contact-form button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  background-color: #00aaff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0077aa;
+}
